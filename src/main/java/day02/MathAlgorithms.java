@@ -3,15 +3,15 @@ package day02;
 
 public class MathAlgorithms {
 
-    public static int commonDivisor(int firstNumber, int secondNumber) {
+    public int commonDivisor(int firstNumber, int secondNumber) {
         try {
                 if (firstNumber % secondNumber == 0) {
                     return secondNumber;
                 } else {
                     return commonDivisor(secondNumber, firstNumber % secondNumber);
                 }
-        } catch (IllegalArgumentException iae) {
-            throw new IllegalArgumentException("Divisor is 0");
+        } catch (ArithmeticException ae) {
+            throw new ArithmeticException("Divisor is 0");
         }
     }
 
