@@ -8,10 +8,9 @@ class MathAlgorithmsTest {
 
     @Test
     void testBigestDiver() {
-        int a = 10;
-        int b = 20;
-        assertEquals(10, new  );
-    }
-
-
+        MathAlgorithms mathAlgorithms = new MathAlgorithms();
+        assertEquals(10, mathAlgorithms.commonDivisor(10, 20));
+        assertEquals(1, mathAlgorithms.commonDivisor(7, 1));
+        assertEquals(1, mathAlgorithms.commonDivisor(1, 7));
+         }
 }

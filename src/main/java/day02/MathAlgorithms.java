@@ -1,25 +1,29 @@
 package day02;
 
 
-import java.util.Scanner;
-
 public class MathAlgorithms {
 
-    public int commonDivisor(int firstNumber, int secondNumber) {
-        while (firstNumber == 0) {
-            firstNumber = 0;
+    public static int commonDivisor(int firstNumber, int secondNumber) {
+        try {
+                if (firstNumber % secondNumber == 0) {
+                    return secondNumber;
+                } else {
+                    return commonDivisor(secondNumber, firstNumber % secondNumber);
+                }
+        } catch (IllegalArgumentException iae) {
+            throw new IllegalArgumentException("Divisor is 0");
         }
-        while (secondNumber > firstNumber) {
-            int gcd = firstNumber % secondNumber;
-        }
-        return firstNumber + secondNumber;
     }
 
-    public static void main(String[] args) {
-        MathAlgorithms mathAlgorithms = new MathAlgorithms();
-        Scanner scanner = new Scanner(System.in);
-        int firstNumber = scanner.nextInt();
-        int secondNumber = scanner.nextInt();
-        mathAlgorithms.commonDivisor(firstNumber, secondNumber);
-    }
+//    public int greatestCommonDivisor(int firstNumber, int secondNumber) {
+//
+//    }
+
+//    public static void main(String[] args) {
+//        MathAlgorithms mathAlgorithms = new MathAlgorithms();
+//        Scanner scanner = new Scanner(System.in);
+//        int firstNumber = scanner.nextInt();
+//        int secondNumber = scanner.nextInt();
+//        mathAlgorithms.commonDivisor(firstNumber, secondNumber);
+//    }
 }
