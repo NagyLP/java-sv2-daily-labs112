@@ -24,24 +24,24 @@ public class Program {
         }
     }
 
-    public int getDiscountFromAge(int age, int numberOfChildren) {
-        int discounts = 0;
-        if (age <= 6) {
-            discounts = Math.max(discount, discounts.get(0));
-        }
-        if (age < 26) {
-            discounts = Math.max(discount, discounts.get(1));
-        }
-        if (age < 65) {
-            discounts = Math.max(discount, discounts.get(2));
-        }
-        if (age > 18 && numberOfChildren >= 3) {
-            discounts = Math.max(discount, discounts.get(3));
-        }
-        return discounts;
-    }
+//    public int getDiscountFromAge(int age, int numberOfChildren) {
+//        int discounts = 0;
+//        if (age <= 6) {
+//            discounts = Math.max(discount, discounts.get(0));
+//        }
+//        if (age < 26) {
+//            discounts = Math.max(discount, discounts.get(1));
+//        }
+//        if (age < 65) {
+//            discounts = Math.max(discount, discounts.get(2));
+//        }
+//        if (age > 18 && numberOfChildren >= 3) {
+//            discounts = Math.max(discount, discounts.get(3));
+//        }
+//        return discounts;
+//    }
 
-    public int getDiscountFromAge(int age) {
-        return getDiscountFromAge(age, 0);
-    }
+//    public int getDiscountFromAge(int age) {
+//        return getDiscountFromAge(age, 0);
+//    }
 }
