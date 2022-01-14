@@ -24,6 +24,6 @@ public class MathAlgorithms {
 //        Scanner scanner = new Scanner(System.in);
 //        int firstNumber = scanner.nextInt();
 //        int secondNumber = scanner.nextInt();
-//        mathAlgorithms.commonDivisor(firstNumber, secondNumber);
+//        System.out.println(mathAlgorithms.commonDivisor(firstNumber, secondNumber));
 //    }
 }
