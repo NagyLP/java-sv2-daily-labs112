@@ -11,7 +11,7 @@ public class MathAlgorithms {
                     return commonDivisor(secondNumber, firstNumber % secondNumber);
                 }
         } catch (ArithmeticException ae) {
-            throw new ArithmeticException("Divisor is 0");
+            throw new ArithmeticException(String.format("-= Divisor is 0 =- %n Error data: %d%n", +secondNumber));
         }
     }
 

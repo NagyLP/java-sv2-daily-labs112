@@ -15,6 +15,6 @@ class MathAlgorithmsTest {
         assertEquals(1, mathAlgorithms.commonDivisor(1, 7));
 
         Exception ex = assertThrows(ArithmeticException.class, () -> mathAlgorithms.commonDivisor(7, 0));
-        assertEquals("Divisor is 0", ex.getMessage());
+        assertEquals(String.format("-= Divisor is 0 =- %n Error data: 0%n"),ex.getMessage());
     }
 }
