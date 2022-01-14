@@ -1,15 +1,13 @@
 package day05;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class StringStatistics {
 
     private Map<Character, Integer> text = new HashMap<>();
 
     public Map<Character, Integer> countChars(String text) {
+
         for (char item : text.toCharArray()) {
             if (this.text.containsKey(item)) {
                 this.text.put(item, this.text.get(item) + 1);
